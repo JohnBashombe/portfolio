@@ -12,9 +12,9 @@ import App from './_app';
  * @license MIT
  * @version 1.0.0
  */
-const Home = () => {
+const Home = (): JSX.Element => {
   return (
-    <div className='flex'>
+    <div className='flex bg-gray-50'>
       <Head>
         <title>Ntavigwa Porfolio</title>
         <meta name='description' content='Ntavigwa Porfolio' />

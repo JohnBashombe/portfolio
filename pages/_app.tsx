@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/globals.css';
 
 import { MyComponents } from '../components';
+import Advantages from '../components/Advantages';
 
 const { TopBar, Header } = MyComponents;
 
@@ -16,11 +17,19 @@ const { TopBar, Header } = MyComponents;
  */
 const App = (): JSX.Element => {
   return (
-    <div className='w-screen h-screen'>
+    <div className='w-10/12 mx-auto h-screen'>
       <TopBar />
       <Header />
+      <Separator />
+      <Advantages />
     </div>
   );
 };
 
 export default App;
+
+const Separator = () => {
+  return (
+    <div className='border-t-2 border-gray-300 mt-16 w-10/12 mx-auto'></div>
+  );
+};
