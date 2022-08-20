@@ -5,7 +5,12 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#EBF0E9',
+        secondary: '#F3F3F3',
+      },
+    },
     fontFamily: {
       serif: ['Source Serif Pro', 'serif'],
     },
