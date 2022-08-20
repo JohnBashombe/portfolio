@@ -10,10 +10,10 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
-
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
+        allowImportExportEverywhere: true,
         project: ['./tsconfig.json'],
       },
     },
