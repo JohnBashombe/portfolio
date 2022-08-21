@@ -2,9 +2,17 @@ import React from 'react';
 import '../styles/globals.css';
 
 import { MyComponents } from '../components';
-import Advantages from '../components/Advantages';
 
-const { TopBar, Header } = MyComponents;
+const {
+  TopBar,
+  Header,
+  Advantages,
+  Latest,
+  Experience,
+  Testimony,
+  Footer,
+  Contact,
+} = MyComponents;
 
 /**
  * @author Ntavigwa Bashombe
@@ -22,6 +30,16 @@ const App = (): JSX.Element => {
       <Header />
       <Separator />
       <Advantages />
+      <Separator />
+      <Experience />
+      <Separator />
+      <Latest />
+      <Separator />
+      <Testimony />
+      <Separator />
+      <Contact />
+      <Separator />
+      <Footer />
     </div>
   );
 };
@@ -30,6 +48,6 @@ export default App;
 
 const Separator = () => {
   return (
-    <div className='border-t-2 border-gray-300 mt-16 w-10/12 mx-auto'></div>
+    <div className='border-t-[1px] border-gray-300 mt-16 w-10/12 mx-auto'></div>
   );
 };

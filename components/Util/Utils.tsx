@@ -15,11 +15,11 @@ export const Info = ({ title, data }: IBio): JSX.Element => {
   return (
     <div className='flex flex-col space-y-8'>
       <p className='text-gray-400 text-xs uppercase'>{title}</p>
-      <p className='text-base text-gray-500 font-medium tracking-wide space-y-2'>
+      <div className='text-base text-gray-500 font-medium tracking-wide space-y-2'>
         {data.map((val, index) => (
           <p key={index}>{val}</p>
         ))}
-      </p>
+      </div>
     </div>
   );
 };
