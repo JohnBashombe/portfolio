@@ -1,13 +1,13 @@
 import React from 'react';
 
 import {
-  AiOutlineTwitter,
   AiOutlineGithub,
   AiOutlineGitlab,
+  AiOutlineMedium,
+  AiOutlineTwitter,
 } from 'react-icons/ai';
 
 import { FiGlobe } from 'react-icons/fi';
-import { FaFacebookF } from 'react-icons/fa';
 import { BsShieldCheck } from 'react-icons/bs';
 
 /**
@@ -39,7 +39,7 @@ const TopBar = (): JSX.Element => {
         <AiOutlineTwitter className='w-5 h-5 text-gray-900 cursor-pointer hover:text-gray-700' />
         <AiOutlineGithub className='w-5 h-5 text-gray-900 cursor-pointer hover:text-gray-700' />
         <AiOutlineGitlab className='w-5 h-5 text-gray-900 cursor-pointer hover:text-gray-700' />
-        <FaFacebookF className='w-4 h-4 text-gray-900 cursor-pointer hover:text-gray-700' />
+        <AiOutlineMedium className='w-5 h-5 text-gray-900 cursor-pointer hover:text-gray-700' />
         <FiGlobe className='w-4 h-4 text-gray-900 cursor-pointer hover:text-gray-700' />
       </div>
     </div>

@@ -4,6 +4,7 @@ import { TbBrandNextjs } from 'react-icons/tb';
 import { SiTailwindcss } from 'react-icons/si';
 import { ISkills } from '../interfaces/skills';
 import { FaFigma, FaNodeJs, FaReact, FaJava } from 'react-icons/fa';
+import { Utils } from './Util';
 
 /**
  * @author Ntavigwa Bashombe
@@ -14,7 +15,6 @@ import { FaFigma, FaNodeJs, FaReact, FaJava } from 'react-icons/fa';
  * @license MIT
  * @version 1.0.0
  */
-
 const Advantages = (): JSX.Element => {
   const skills: ISkills[] = [
     {
@@ -51,9 +51,7 @@ const Advantages = (): JSX.Element => {
 
   return (
     <div className='my-16 flex flex-col justify-center items-center pb-16 w-10/12 mx-auto'>
-      <p className='text-gray-900 font-serif text-5xl mb-[80px]'>
-        My Advantage
-      </p>
+      {<Utils.Title title='My Advantage' />}
       <div className='grid grid-cols-2 md:grid-cols-3 gap-5 xl:grid-cols-6 w-full'>
         {skills.map((val, index) => (
           <Card
